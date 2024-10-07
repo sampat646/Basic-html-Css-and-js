@@ -36,12 +36,7 @@ a:hover{
         /* new */
         flex-direction: column;
         align-items: center;
-
-
-    
-        
-        
-    }
+        }
     h1{
         font-size: 45px;
     }
@@ -53,4 +48,34 @@ a:hover{
         align-items: center;
         gap: 10px;
     } 
+    section{
+        width: 100vw;
+        flex-direction: column;
+    }
+article,aside{
+    width: 100vw !important;
+}
+aside{
+    height: 10vh !important;
+}
+}
+
+section{
+    /* height: 100vh; */
+    display: flex;
+}
+article{
+    height: 70vh;
+    width: 70vw;
+    padding: 20px;
+    background-color: pink;
+}
+aside{
+    height: 70vh;
+    width: 30vw;
+    padding: 20px;
+    background-color: green;
+}
+footer{
+    background-color: blanchedalmond;
 }
