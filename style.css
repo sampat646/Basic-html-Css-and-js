@@ -2,7 +2,7 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 nav{
-    width: 100vw;
+    width: 99vw;
     display: flex;
     justify-content: space-between;
     background-color: #808080;
@@ -24,7 +24,68 @@ a{
 a:hover{
     color: antiquewhite;
 }
+
+section{
+    /* height: 100vh; */
+    display: flex;
+}
+article{
+    height: 70vh;
+    width: 70vw;
+    padding: 20px;
+    background-color: pink;
+}
+aside{
+    height: 70vh;
+    width: 30vw;
+    padding: 20px;
+    background-color: green;
+}
+footer{
+    padding: 8px 0 0 0;
+    /* height: 30vh; */
+    background-color: blanchedalmond;
+}
+#main_footer{
+    display: flex;
+    justify-content: space-around;
+}
+.fList{
+    flex-direction: column;
+    gap: 6px;
+}
+
+#nichewala{
+    padding: 14px;
+    padding-left: 140px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+
+}
+#nichewala input{
+    width: 20vw;
+    gap: 5px;
+}
+
+
 @media (max-width:800px) {
+    #nichewala{
+        padding: 14px;
+        padding-left: 120px;
+        display: flex;
+        width: 40vw;
+        flex-direction: column;
+    }
+    #nichewala input{
+        width: 40vw;
+        gap: 5px;
+    }
+   
+    .fList{
+        flex-direction: column;
+        gap: 6px;
+    }
     nav{
         width: 100vw;
         display: flex;
@@ -58,24 +119,4 @@ article,aside{
 aside{
     height: 10vh !important;
 }
-}
-
-section{
-    /* height: 100vh; */
-    display: flex;
-}
-article{
-    height: 70vh;
-    width: 70vw;
-    padding: 20px;
-    background-color: pink;
-}
-aside{
-    height: 70vh;
-    width: 30vw;
-    padding: 20px;
-    background-color: green;
-}
-footer{
-    background-color: blanchedalmond;
 }
